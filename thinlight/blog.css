@@ -1,0 +1,21 @@
+div.post {
+    border-bottom: 1px solid #EEF;
+    margin: 8px 0px;
+    padding: 4px;
+}
+
+div.post div.title {
+    color: #35A;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.post div.date {
+    border-bottom: 1px solid #EEF;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    color: #888;
+    font-size: 10px;
+    text-align: center;
+}
