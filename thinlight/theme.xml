@@ -9,5 +9,12 @@
 ]>
 
 <theme name="Thin Light" author="meh. &amp; blawl">
-    <file name="core"/>
+    <templates>
+        <template name="blog"/>
+    </templates>
+
+    <styles>
+        <style name="core"/>
+        <style name="blog"/>
+    </styles>
 </theme>
