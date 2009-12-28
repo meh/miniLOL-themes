@@ -27,8 +27,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
-    border: 1px solid #222222;
-    background-color: #353535;
+    border: 1px solid #EEF;
 }
 
 .blog .page .post {
@@ -78,8 +77,7 @@
 .blog .pager .numbers div {
     font-weight: bold;
 
-    background-color: #353535;
-    border: 1px solid #222222;
+    border: 1px solid #EEF;
 
     padding-left: 2px;
     padding-right: 2px;
@@ -89,7 +87,7 @@
 }
 
 .blog .pager .numbers div:hover {
-    background-color: #3C3C3C;
+    color: #35A;
 }
 
 .blog .pager .numbers .current{

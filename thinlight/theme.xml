@@ -10,11 +10,12 @@
 
 <theme name="Thin Light" author="meh. &amp; blawl">
     <templates>
-        <template name="blog"/>
+        <template name="blog/template"/>
+        <template name="blog/editors"/>
     </templates>
 
     <styles>
         <style name="core"/>
-        <style name="blog"/>
+        <style name="blog/style"/>
     </styles>
 </theme>
