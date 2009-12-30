@@ -71,11 +71,14 @@ a {
     background-color: #EEF;
 }
 
-.project > div > a {
+.project .url a {
     color: #35A;
     font-size: 13px;
     font-weight: 700;
-    clear: right;
+}
+
+.project .url {
+    margin-bottom: 15px;
 }
 
 .round {

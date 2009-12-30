@@ -9,6 +9,10 @@
 ]>
 
 <theme name="Thin Light" author="meh. &amp; blawl">
+    <list>
+        <link><![CDATA[<div class="#{class}" id="#{id}">#{before}<div class="url"><a href="#{url}" target="#{target}" #{attributes}>#{text}</a></div><div class="description">#{after}</div></div>]]></link>
+    </list>
+
     <templates>
         <template name="blog/template"/>
         <template name="blog/editors"/>
