@@ -9,5 +9,7 @@
 ]>
 
 <theme name="original" author="meh.">
-    <file name="core"/>
+    <styles>
+        <style name="core"/>
+    </styles>
 </theme>
