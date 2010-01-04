@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE theme [
+    <!ELEMENT theme (file*)>
+    <!ATTLIST theme
+        name   CDATA #REQUIRED
+        author CDATA #REQUIRED
+    >
+]>
+
+<theme name="Dark Blood" author="meh." description="One of the meh's homepage themes.">
+    <styles>
+        <style name="core"/>
+        <style name="blog/style"/>
+        <style name="SyntaxHighlighter/style">
+    </styles>
+</theme>
