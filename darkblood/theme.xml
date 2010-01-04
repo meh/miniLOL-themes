@@ -12,6 +12,6 @@
     <styles>
         <style name="core"/>
         <style name="blog/style"/>
-        <style name="SyntaxHighlighter/style">
+        <style name="SyntaxHighlighter/style"/>
     </styles>
 </theme>
