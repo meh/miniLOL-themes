@@ -16,8 +16,10 @@
         });
     };
 
-    Event.observe(window, 'resize', miniLOL.theme.resize);
     miniLOL.theme.resize();
+
+    Event.observe(window, 'resize', miniLOL.theme.resize);
+    Event.observe(document, ':initialized', miniLOL.theme.resize);
     ]]></initialize>
 
     <finalize><![CDATA[
