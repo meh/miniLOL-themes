@@ -9,6 +9,22 @@
 ]>
 
 <theme name="Dark Blood" author="meh." description="One of the meh's homepage themes.">
+    <initialize><![CDATA[
+    miniLOL.theme.resize = function () {
+        $('body').setStyle({
+            height: (document.viewport.getHeight()-(50+$('head').getHeight()+20)-(50+$('credits').getHeight()+20))+'px'
+        });
+    };
+
+    Event.observe(window, 'resize', miniLOL.theme.resize);
+    miniLOL.theme.resize();
+    ]]></initialize>
+
+    <finalize><![CDATA[
+    Event.stopObserving(window, 'resize', miniLOL.theme.resize);
+    delete miniLOL.theme.resize;
+    ]]></finalize>
+
     <styles>
         <style name="core"/>
         <style name="blog/style"/>
