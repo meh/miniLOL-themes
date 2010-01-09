@@ -3,22 +3,22 @@
 <!DOCTYPE template [
     <!ELEMENT layer (menu, element)>
     <!ATTLIST layer
-        level   CDATA   #REQUIRED
+        id   ID   #REQUIRED
     >
 
-    <!ELEMENT menu (PCDATA)>
+    <!ELEMENT menu (#PCDATA)>
 
-    <!ELEMENT element (PCDATA)>
+    <!ELEMENT element (#PCDATA)>
 ]>
 
 <template>
-    <layer level="1">
+    <layer id="0">
         <menu><![CDATA[
             <div class="menu">#{data}</div>
         ]]></menu>
 
-        <element><![CDATA[
-            <div class="element"><a href="#{href}">#{data}</a></div>
-        ]]></element>
+        <item><![CDATA[
+            <span class="item"><a href="#{href}">#{text}</a></span>
+        ]]></item>
     </layer>
 </template>
