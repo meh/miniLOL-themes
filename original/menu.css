@@ -1,0 +1,7 @@
+#menu .element:before {
+    content: " - ";
+}
+
+#menu .element:nth-child(1):before {
+    content: "";
+}

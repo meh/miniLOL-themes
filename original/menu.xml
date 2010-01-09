@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE template [
+    <!ELEMENT layer (menu, element)>
+    <!ATTLIST layer
+        level   CDATA   #REQUIRED
+    >
+
+    <!ELEMENT menu (PCDATA)>
+
+    <!ELEMENT element (PCDATA)>
+]>
+
+<template>
+    <layer level="1">
+        <menu><![CDATA[
+            <div class="menu">#{data}</div>
+        ]]></menu>
+
+        <element><![CDATA[
+            <div class="element"><a href="#{href}">#{data}</a></div>
+        ]]></element>
+    </layer>
+</template>
