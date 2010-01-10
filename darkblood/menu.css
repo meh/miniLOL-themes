@@ -48,8 +48,6 @@
 #head .menu a.menu_element:hover div {
 }
 
-#head .menu div.separator {
+#head .menu div.new {
     border-top: solid 1px #b21818;
-    width: 100%;
-    cursor: default;
 }
