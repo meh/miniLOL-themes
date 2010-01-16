@@ -8,14 +8,13 @@
     >
 ]>
 
-<theme name="original" author="meh." menu="menu" content="body">
+<theme name="Dark Blood" author="meh." description="One of the meh's homepage themes." homepage="http://meh.doesntexist.org" menu="head" content="body">
     <initialize><![CDATA[
         miniLOL.theme.resize = function () {
-            $("container").setStyle({
-                top:  ((document.viewport.getHeight() - $("container").getHeight())/2) + "px",
-                left: ((document.viewport.getWidth() - $("container").getWidth())/2) + "px"
+            $('body').setStyle({
+                height: (document.viewport.getHeight()-(50+$('head').getHeight()+20)-(50+$('credits').getHeight()+20))+'px'
             });
-        }
+        };
 
         Event.observe(window, "resize", miniLOL.theme.resize);
         Event.observe(document, ":module.load", miniLOL.theme.resize);
@@ -36,5 +35,9 @@
     <styles>
         <style name="core"/>
         <style name="menu"/>
+
+        <style name="blog/style"/>
+
+        <style name="SyntaxHighlighter/style"/>
     </styles>
 </theme>
