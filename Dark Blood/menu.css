@@ -21,7 +21,7 @@
     text-align: left;
 }
 
-#head .menu > .menu {
+#head .menu > div.menu {
     position: absolute;
     left: 10px;
     display: none;
@@ -43,9 +43,6 @@
 
 #head .menu a.menu_element:hover {
     color: #b21818;
-}
-
-#head .menu a.menu_element:hover div {
 }
 
 #head .menu div.new {
