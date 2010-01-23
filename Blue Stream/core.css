@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+ 
+a:link, a:visited, a:active {
+    color: #f5f5f5;
+    font-size: 12px;
+    text-decoration: underline;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+ 
+div.project a { text-decoration: none; }
+ 
+img {
+    border: none;
+    text-align: center;
+}
+ 
+pre {
+    position: relative;
+}
+ 
+h1 {
+    font-size: 16px;
+}
+ 
+h1:before {
+    content: "+ ";
+}
+ 
+h1:after {
+    content: " +";
+}
+ 
+#body > code {
+    display: none;
+}
+ 
+body {
+    width: 100%;
+    background-color: #000011;
+    color: #ffffff;
+    font-family: Courier New, Monospace, Terminus;
+    font-size: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+ 
+#container {
+    background-color: #000000;
+    border: solid 1px #0000aa;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 780px;
+    padding: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: justify;
+}
+ 
+#head {
+    background-color: #708090;
+    width: 760px;
+    height: 17px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 6px;
+    padding: 5px;
+    text-align: center;
+    border: solid 1px #0000aa;
+}
+ 
+#body {
+    background-color: #000000;
+    width: 760px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    border: solid 1px #0000aa;
+    padding: 5px;
+    overflow: auto;
+}
+ 
+#credits {
+    background-color: #708090;
+    width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    text-align: right;
+    border: solid 1px #0000aa;
+    height: 15px;
+    font-size: 10px;
+}
+ 
+.hidden {
+    display: none;
+}
+ 
+.paper pre {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 1px solid #0000aa;
+    background-color: #000000;
+    overflow: auto;
+    position: relative;
+    top: -10px;
+}
