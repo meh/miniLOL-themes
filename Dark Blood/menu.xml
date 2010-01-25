@@ -31,4 +31,8 @@
             <a class="menu_element" href="#{href}"><div class="#{class}">#{text}</div></a>
         ]]></item>
     </layer>
+
+    <separator><![CDATA[
+        <div class="separator"></div>
+    ]]></separator>
 </template>

@@ -45,6 +45,7 @@
     color: #b21818;
 }
 
-#head .menu div.new {
+#head .menu div.separator {
+    width: 100%;
     border-top: solid 1px #b21818;
 }
