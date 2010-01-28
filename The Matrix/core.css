@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a:link, a:visited, a:active {
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: underline;
+}
+a:hover {
+    color: #17a617;
+    text-decoration: none;
+}
+
+div.project a { text-decoration: none; }
+
+img {
+    border: none;
+    text-align: center;
+}
+
+pre {
+    position: relative;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h1:before {
+    content: "+ ";
+}
+
+h1:after {
+    content: " +";
+}
+
+#body > code {
+    display: none;
+}
+
+body {
+    width: 100%;
+    background: url('thematrix.jpg') #000000;
+    background-repeat: repeat-x;
+    color: #b2b2b2;
+    font-family: Courier New, Monospace, Terminus;
+    font-size: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#container {
+    background-color: #000000;
+    border: 4px double #17a617;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    padding: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: justify;
+}
+
+#head {
+    background-color: #242424;
+    width: 680px;
+    height: 17px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 6px;
+    padding: 5px;
+    text-align: center;
+    border: 1px dotted #17a617;
+}
+
+#body {
+    background-color: #242424;
+    width: 680px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    border: 1px dotted #17a617;
+    padding: 5px;
+    overflow: auto;
+}
+
+#credits {
+    background-color: #242424;
+    width: 680px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    text-align: right;
+    border: 1px dotted #17a617;
+    height: 15px;
+    font-size: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+input.donate {
+    background: #242424;
+    color: inherit;
+    border: solid 1px #17a617;
+}
+input.donate:hover {
+    color: #ffffff;
+    background-color: #242424;
+    border: 1px solid #17a617;
+}
+
+.paper pre {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 1px solid #17a617;
+    background-color: #242424;
+    overflow: auto;
+    position: relative;
+    top: -10px;
+}
