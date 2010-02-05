@@ -8,7 +8,7 @@
     >
 ]>
 
-<theme name="0xWhite_Wolf" author="KinG-InFeT" homepage="http://www.kinginfet.net/" menu="menu" content="body">
+<theme name="0xWhite Wolf" author="KinG-InFeT" homepage="http://www.kinginfet.net/" menu="menu" content="body">
     <initialize><![CDATA[
         miniLOL.theme.resize = function () {
             $("container").setStyle({
