@@ -9,6 +9,15 @@
     overflow: auto !important;
 }
 
+div.syntaxhighlighter {
+    padding: 0 !important;
+    border: 3px solid #b21818 !important;
+}
+
+.source div.syntaxhighlighter {
+    border: 0 !important;
+}
+
 /* Highlighed line number */
 .syntaxhighlighter .line.highlighted .number
 {
