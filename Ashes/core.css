@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+body {
+    color: #353535;
+    background: #FFFFFF;
+    font-size: 12px;
+    overflow: auto;
+}
+
+#container {
+    max-width: 700px;
+    min-width: 500px;
+    border: 1px solid #B4B4B4;
+    font-family: Courier New;
+    margin: 30px auto;
+    padding: 20px;
+    padding-bottom: 0px;
+    background: #F0F0F0;
+    text-align: justify;
+}
+
+#container h1 {
+    font-size: 18px
+}
+
+#header {
+    text-align: left;
+    font-family: Verdana,Tahoma,Geneva,Arial,sans-serif;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#body {
+    padding: 8px;
+    overflow: auto;
+}
+
+#footer {
+    color: #949494;
+    border-top: 1px solid #B4B4B4;
+    font-size: 9px;
+    text-align: right;
+    padding: 6px;
+    margin: 4px;
+}
+
+#footer a {
+    color: #848484
+}
+
+.link .url {
+    float: left;
+}
+
+.link .description {
+    margin-left: 7px;
+    float: left;
+}
+
+.project > div {
+    border: 1px solid #DDE;
+    margin: 4px 0px;
+    padding: 4px;
+}
+
+.project > div:hover {
+    background-color: #EEF;
+}
+
+.project .url a {
+    color: #35A;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.project .url {
+    margin-bottom: 15px;
+}
+
+.round {
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+#F {
+    font-size: 600%;
+    line-height: 80%;
+    float: left;
+}
+
+#ox {
+    font-size: 300%;
+    letter-spacing: 7px;
+    line-height: 100%;
+}
+
+pre {
+    border: 1px dotted #B4B4B4;
+    background: #E4E4E4;
+    padding: 4px;
+    margin: 4px;
+    font-size: 10px;
+    font-family: monospace;
+}
