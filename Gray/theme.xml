@@ -44,6 +44,7 @@
         miniLOL.theme.data.resize.defer();
 
         miniLOL.theme.data.current = function (event) {
+            console.log(event.memo)
             var matches = event.memo.toString().match(/(#[^&]*)/)
             var url;
 
@@ -90,7 +91,6 @@
         }
 
         Event.observe(document, ":go", miniLOL.theme.data.current);
-        Event.observe(document, ":initialized", miniLOL.theme.data.current);
     ]]></initialize>
 
     <finalize><![CDATA[
