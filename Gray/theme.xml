@@ -44,7 +44,6 @@
         miniLOL.theme.data.resize.defer();
 
         miniLOL.theme.data.current = function (event) {
-            console.log(event.memo)
             var matches = event.memo.toString().match(/(#[^&]*)/)
             var url;
 
