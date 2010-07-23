@@ -18,17 +18,17 @@
         ]]></menu>
 
         <item><![CDATA[
-            <li><a href="#{href}" #{attributes}>#{text}</a>#{data}</li>
+            <div class="menu"><a href="#{href}" #{attributes}>#{text}</a>#{data}</div>
         ]]></item>
     </layer>
 
-    <layer id="default">
+    <layer id="1">
         <menu><![CDATA[
-            <ul>#{data}</ul>
+            <div class="menu">#{data}</div>
         ]]></menu>
 
         <item><![CDATA[
-            <li><a href="#{href}" #{attributes}>#{text}</a>#{data}</li>
+            <a class="menu_element" href="#{href}" #{attributes}><div class="#{class}">#{text}</div></a>
         ]]></item>
     </layer>
 

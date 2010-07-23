@@ -44,7 +44,7 @@
         miniLOL.theme.data.resize.defer();
 
         miniLOL.theme.data.current = function (event) {
-            var matches = event.memo.match(/(#[^&]*)/)
+            var matches = unescape(event.memo).match(/(#[^&]*)/)
             var url;
 
             if (matches) {
@@ -78,33 +78,34 @@
                     element.removeClassName("current");
                 });
 
-                while (element.parentNode.getAttribute("id") != "nav") {
+                while (element.parentNode.getAttribute("id") != "menu") {
                     element = element.parentNode;
                 }
 
                 element.addClassName('current');
             }
             else if ($$(".current").length == 0) {
-                $($("nav").getElementsByTagName("li")[0]).addClassName("current");
+                $($("menu").getElementsByTagName("li")[0]).addClassName("current");
             }
         }
 
+        miniLOL.theme.data.current.change = function () {
+            miniLOL.theme.data.current({ memo: location.href });
+        }
+
         Event.observe(document, ":go", miniLOL.theme.data.current);
+        Event.observe(document, ":menu.change", miniLOL.theme.data.current.change);
+        Event.observe(document, ":theme.loaded", miniLOL.theme.data.current.change);
     ]]></initialize>
 
     <finalize><![CDATA[
         Event.stopObserving(window, "resize", miniLOL.theme.data.resize);
         Event.stopObserving(document, ":module.load", miniLOL.theme.data.resize);
 
+        Event.stopObserving(document, ":menu.change", miniLOL.theme.data.current.change);
+        Event.stopObserving(document, ":theme.loaded", miniLOL.theme.data.current.change);
         Event.stopObserving(document, ":go", miniLOL.theme.data.current);
     ]]></finalize>
-
-    <list>
-        <global><![CDATA[ <table #{attributes}>#{data}</table> ]]></global>
-
-        <link><![CDATA[<tr><td>#{before}</td><td><a href="#{url}" target="#{target}" #{attributes}>#{text}</a></td><td>#{after}</td></tr>]]></link>
-        <item><![CDATA[<tr><td>#{before}</td><td>#{text}</td><td>#{after}</td></tr>]]></item>
-    </list>
 
     <styles>
         <style name="core"/>
