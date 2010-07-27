@@ -1,0 +1,95 @@
+.post {
+	border-bottom: 1px solid #000;
+	margin-bottom: 10px;
+	font-size: 11px;
+}
+
+.post .title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	color: #000;
+	font-style: bold;
+	margin-bottom: 10px;
+}
+
+.post .foot {
+	margin-top: 10px;
+	text-align: right;
+}
+
+.post .author {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.post .date {
+	font-style: italic;
+}
+
+.blog .pager {
+    margin-top: 10px;
+}
+
+.blog .pager div {
+    float: left;
+}
+
+.blog .pager .previous {
+    margin-right: 5px;
+}
+
+.blog .pager .next {
+    margin-left: 5px;
+}
+
+.blog .pager .previous a, .blog .pager .next a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.blog .pager .numbers div {
+    font-weight: bold;
+
+    padding-left: 2px;
+    padding-right: 2px;
+
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.blog .pager .numbers div:hover {
+    color: #b21818;
+}
+
+.blog .pager .numbers .current{
+    font-weight: normal;
+}
+
+.blog .pager .numbers a {
+    text-decoration: none;
+}
+
+.blog .first:hover a {
+    color: #b21818;
+}
+
+.blog .inner:hover a {
+    color: #b21818;
+}
+
+.blog .last:hover a {
+    color: #b21818;
+}
+
+.blog #editor {
+    width: 99%;
+    height: 100px;
+    font-family: Courier new;
+    font-size: 10px;
+}
+
+.blog .syntaxhighlighter {
+    margin: 6px auto 6px auto !important;
+    width: 96% !important;
+}

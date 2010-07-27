@@ -55,7 +55,14 @@
 }
 
 .blog .pager {
-    margin-top: 10px;
+    background: black;
+    position: fixed;
+    top: 29px;
+    right: 0px;
+    border-left: 1px solid #b21818;
+    border-bottom: 1px solid #b21818;
+    padding: 5px;
+    z-index: 20;
 }
 
 .blog .pager div {
@@ -77,9 +84,6 @@
 
 .blog .pager .numbers div {
     font-weight: bold;
-
-    background-color: #000000;
-    border: 1px solid #b21818;
 
     padding-left: 2px;
     padding-right: 2px;

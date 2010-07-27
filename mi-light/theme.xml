@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE theme [
+    <!ELEMENT theme (initialize?, finalize?, styles?)>
+    <!ATTLIST theme
+        name   CDATA #REQUIRED
+        author CDATA #REQUIRED
+    >
+
+    <!ELEMENT initialize (#PCDATA)>
+
+    <!ELEMENT finalize (#PCDATA)>
+
+    <!ELEMENT styles (style+)>
+    
+    <!ELEMENT style EMPTY>
+    <!ATTLIST style
+        name    CDATA   #REQUIRED
+    >
+]>
+
+<theme name="mi-light" menu="menu" content="page">
+    <initialize><![CDATA[
+        $('title').update(miniLOL.config["core"].siteTitle);
+    ]]></initialize>
+
+    <styles>
+        <style name="core"/>
+        <style name="menu"/>
+
+        <style name="Blog/style"/>
+        <style name="Syntax Highlighter/style"/>
+    </styles>
+</theme>
