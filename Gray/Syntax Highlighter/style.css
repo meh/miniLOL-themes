@@ -1,9 +1,9 @@
 .syntaxhighlighter {
   background-color: white !important; }
   .syntaxhighlighter .line.alt1 {
-    background-color: #f5f5f5 !important; }
-  .syntaxhighlighter .line.alt2 {
     background-color: white !important; }
+  .syntaxhighlighter .line.alt2 {
+    background-color: #f5f5f5 !important; }
   .syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
     background-color: #8b8b8b !important; }
   .syntaxhighlighter .line.highlighted.number {

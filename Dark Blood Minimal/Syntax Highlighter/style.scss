@@ -1,0 +1,48 @@
+$background: #000000 !default;
+ 
+$line_highlighted_background: #8b8b8b !default;
+$line_highlighted_number:     white !default;
+$line_alt1_background:        #060606 !default;
+ 
+$gutter_text: #b2b2b2 !default;
+ 
+$code_plain:        #DDDDDD !default;
+$code_comments:     #888888 !default;
+$code_string:       #FF1010 !default;
+$code_keyword:      #FFCD00 !default;
+$code_preprocessor: #18b218 !default;
+$code_variable:     #18b218 !default;
+$code_value:        #abab00 !default;
+$code_functions:    #FFFFFF !default;
+$code_constants:    #0066cc !default;
+$code_color1:       #ff4000 !default;
+$code_color2:       #ff1493 !default;
+$code_color3:       #ff0000 !default;
+
+$caption_color: black !default;
+ 
+@import "_theme_template.scss";
+ 
+.syntaxhighlighter {
+    .toolbar {
+        display: none !important;
+    }
+
+    .gutter {
+        .line {
+            border-right: 1px solid #b21818 !important;
+        }
+    }
+
+    .comments {
+        font-style: italic !important;
+    }
+
+    .keyword {
+        font-weight: bold !important;
+    }
+
+    .functions {
+        font-weight: bold !important;
+    }
+}
