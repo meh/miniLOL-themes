@@ -118,3 +118,29 @@ input.donate:hover {
     top: -10px;
 }
 
+div.spoiler {
+    width: 50%;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid #b21818;
+    background-color: #000000;
+    overflow: auto;
+    position: relative;
+    top: -10px;
+}
+
+div.spoiler > div.summary {
+    display: block;
+}
+
+div.spoiler > div.content {
+    display: none;
+}
+
+div.spoiler:hover > div.summary {
+    display: none;
+}
+
+div.spoiler:hover > div.content {
+    display: block;
+}
