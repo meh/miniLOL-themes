@@ -32,6 +32,32 @@
         delete miniLOL.theme.resize;
     ]]></finalize>
 
+    <templates>
+        <menu>
+            <layers>
+                <_0>
+                    <menu><![CDATA[
+                        #{data}
+                    ]]></menu>
+            
+                    <item><![CDATA[
+                        <div class="menu"><a href="#{href}" #{attributes}>#{text}</a>#{data}</div>
+                    ]]></item>
+                </_0>
+            
+                <_1>
+                    <menu><![CDATA[
+                        <div class="menu">#{data}</div>
+                    ]]></menu>
+            
+                    <item><![CDATA[
+                        <a class="menu_element" href="#{href}" #{attributes}><div class="#{class}">#{text}</div></a>
+                    ]]></item>
+                </_1>
+            </layers>
+        </menu>
+    </templates>
+
     <styles>
         <style name="core"/>
         <style name="menu"/>
