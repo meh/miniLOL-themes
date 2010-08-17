@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE theme [
+    <!ELEMENT theme (initialize?, finalize?, styles?)>
+    <!ATTLIST theme
+        name   CDATA #REQUIRED
+        author CDATA #REQUIRED
+    >
+
+    <!ELEMENT initialize (#PCDATA)>
+
+    <!ELEMENT finalize (#PCDATA)>
+
+    <!ELEMENT styles (style+)>
+    
+    <!ELEMENT style EMPTY>
+    <!ATTLIST style
+        name    CDATA   #REQUIRED
+    >
+]>
+
+<theme name="Kn0tledge" author="Kn0t" homepage="http://kn0t.doesntexist.org/" menu="menu" content="body">
+    <initialize><![CDATA[
+        $('siteTitle').update(miniLOL.config["core"].logo || miniLOL.config["core"].siteTitle)
+
+        this.resize = function () {
+            var margin = (document.viewport.getHeight() / 6);
+
+            $("container").setStyle({
+                marginTop: margin + "px"
+            });
+
+            $("internal").setStyle({
+                height: (document.viewport.getHeight() - (($("container").getHeight() - $("internal").getHeight()) + 25) - (margin * 2)) + "px"
+            });
+
+            $("body").setStyle({
+                height: ($("internal").getHeight() - ($("siteTitle").getHeight() + (10 * 3))) + "px"
+            });
+        }
+
+        Event.observe(window, "resize", this.resize);
+        Event.observe(document, ":module.load", this.resize);
+
+        Event.observe(document, ":initialized", function () {
+            this.resize.delay(0.1);
+        }.bind(this));
+
+        this.resize.defer();
+    ]]></initialize>
+
+    <finalize><![CDATA[
+        Event.stopObserving(window, "resize", this.resize);
+        Event.stopObserving(document, ":module.load", this.resize);
+    ]]></finalize>
+
+    <templates>
+        <menu>
+            <layers>
+                <_0>
+                    <menu><![CDATA[
+                        <div class="menu">#{data}</div>
+                    ]]></menu>
+            
+                    <item><![CDATA[
+                        <span class="item"><a href="#{href}">#{text}</a></span>
+                    ]]></item>
+                </_0>
+            </layers>
+        </menu>
+    </templates>
+
+    <styles>
+        <style name="core"/>
+        <style name="menu"/>
+    </styles>
+</theme>

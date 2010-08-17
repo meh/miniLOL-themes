@@ -1,0 +1,23 @@
+#menu {
+    margin-top: 10px;
+    padding: 2px;
+    background: black;
+    border: 1px solid white;
+    opacity: 0.7;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu a:hover, #menu a:active {
+    text-decoration: overline;
+}
+
+#menu .item:before {
+    content: " · ";
+}
+
+#menu .item:nth-child(1):before {
+    content: "";
+}
