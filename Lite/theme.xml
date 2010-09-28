@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE theme [
+    <!ELEMENT theme (file*)>
+    <!ATTLIST theme
+        name   CDATA #REQUIRED
+        author CDATA #REQUIRED
+    >
+]>
+
+<theme name="Lite" author="meh." homepage="http://meh.doesntexist.org" content="body">
+    <styles>
+        <style name="core"/>
+
+        <style name="Blog/style"/>
+    </styles>
+</theme>
