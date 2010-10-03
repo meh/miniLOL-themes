@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE theme [
+    <!ELEMENT theme (initialize?, finalize?, styles?)>
+    <!ATTLIST theme
+        name   CDATA #REQUIRED
+        author CDATA #REQUIRED
+    >
+
+    <!ELEMENT initialize (#PCDATA)>
+
+    <!ELEMENT finalize (#PCDATA)>
+
+    <!ELEMENT styles (style+)>
+    
+    <!ELEMENT style EMPTY>
+    <!ATTLIST style
+        name    CDATA   #REQUIRED
+    >
+]>
+
+<theme name="Utopia" author="meh." homepage="http://meh.doesntexist.org" menu="menu" content="body">
+    <templates>
+        <menu>
+            <layers>
+                <_0>
+                    <menu><![CDATA[
+                        <ul>#{data}</ul>
+                    ]]></menu>
+            
+                    <item><![CDATA[
+                        <li><a href="#{href}" #{attributes}>#{text}</a>#{data}</li>
+                    ]]></item>
+                </_0>
+            
+                <default>
+                    <menu><![CDATA[
+                        <ul>#{data}</ul>
+                    ]]></menu>
+            
+                    <item><![CDATA[
+                        <li><a href="#{href}" #{attributes}>#{text}</a>#{data}</li>
+                    ]]></item>
+                </default>
+            </layers>
+        
+            <separator><![CDATA[
+                <div class="separator"></div>
+            ]]></separator>
+        </menu>
+    </templates>
+
+    <styles>
+        <style name="style"/>
+
+        <style name="Blog/style"/>
+    </styles>
+</theme>
