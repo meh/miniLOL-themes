@@ -1,42 +1,40 @@
 .blog {
-    .page {
-        .post {
-            border-bottom: 1px solid black;
+    .post {
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+
+        .header {
+            width: 100%;
             margin-bottom: 10px;
 
-            .header {
-                width: 100%;
-                text-align: center;
-                margin-bottom: 10px;
-
-                .title a {
-                    font-size: 18px;
-                    font-weight: bold;
-                    text-decoration: none !important;
-                }
-
-                .date {
-                    font-size: 10px;
-                }
+            .title a {
+                font-size: 24px;
+                font-weight: bold;
+                text-decoration: none !important;
+                border-bottom: 1px solid black;
             }
-            
-            .by {
-                margin-top: 10px;
-                text-align: right;
 
-                .author {
-                    font-weight: bold;
-                }
-
-                .date {
-                    font-style: italic;
-                }
+            .date {
+                font-size: 10px;
             }
         }
-    }
-    
-    .page .pager {
-        display: none;
+        
+        .by {
+            margin-top: 10px;
+            text-align: right;
+
+            .author {
+                font-weight: bold;
+            }
+
+            .date {
+                font-style: italic;
+            }
+        }
+
+        .pager {
+            display: none;
+        }
     }
     
     .pager {
